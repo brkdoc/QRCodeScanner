@@ -1,0 +1,4 @@
+#Sun Nov 29 01:49:54 EET 2020
+base.0=/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

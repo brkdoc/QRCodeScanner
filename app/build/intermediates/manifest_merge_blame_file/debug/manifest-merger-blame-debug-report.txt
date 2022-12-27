@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.projem.androidbarcode"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:5:5-64
+11-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:6:5-80
+12-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:6:22-78
+13
+14    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+15    <uses-feature
+15-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:24:5-26:36
+16        android:name="android.hardware.camera"
+16-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:25:9-47
+17        android:required="false" />
+17-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:26:9-33
+18    <uses-feature
+18-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:27:5-29:36
+19        android:name="android.hardware.camera.front"
+19-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:28:9-53
+20        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+20-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:29:9-33
+21    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:32:5-34:36
+23        android:name="android.hardware.camera.autofocus"
+23-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:33:9-57
+24        android:required="false" />
+24-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:34:9-33
+25    <uses-feature
+25-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:35:5-37:36
+26        android:name="android.hardware.camera.flash"
+26-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:36:9-53
+27        android:required="false" />
+27-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:37:9-33
+28    <uses-feature
+28-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:38:5-40:36
+29        android:name="android.hardware.screen.landscape"
+29-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:39:9-57
+30        android:required="false" />
+30-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:40:9-33
+31    <uses-feature
+31-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:41:5-43:36
+32        android:name="android.hardware.wifi"
+32-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:42:9-45
+33        android:required="false" />
+33-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:43:9-33
+34
+35    <application
+35-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:7:5-30:19
+36        android:allowBackup="true"
+36-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:8:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.1.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:icon="@mipmap/ic_launcher"
+39-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:9:9-43
+40        android:label="@string/app_name"
+40-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:10:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:11:9-54
+42        android:supportsRtl="true"
+42-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:12:9-35
+43        android:testOnly="true"
+44        android:theme="@style/AppTheme" >
+44-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:13:9-40
+45        <provider
+45-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:14:9-22:20
+46            android:name="androidx.core.content.FileProvider"
+46-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:16:13-62
+47            android:authorities="com.projem.androidbarcode"
+47-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:15:13-60
+48            android:exported="false"
+48-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:17:13-37
+49            android:grantUriPermissions="true" >
+49-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:18:13-47
+50            <meta-data
+50-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:19:13-21:57
+51                android:name="android.support.FILE_PROVIDER_PATHS"
+51-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:20:17-67
+52                android:resource="@xml/provider_paths" />
+52-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:21:17-55
+53        </provider>
+54
+55        <activity android:name="com.projem.androidbarcode.MainActivity" >
+55-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:23:9-29:20
+55-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:23:19-72
+56            <intent-filter>
+56-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:24:13-28:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:25:17-69
+57-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:25:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:27:17-77
+59-->/Users/burakdemir/AndroidStudioProjects/Android_Barcode_Generator_Scanner/app/src/main/AndroidManifest.xml:27:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:46:9-52:63
+63            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+63-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:47:13-74
+64            android:clearTaskOnLaunch="true"
+64-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:48:13-45
+65            android:screenOrientation="sensorLandscape"
+65-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:49:13-56
+66            android:stateNotNeeded="true"
+66-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:50:13-42
+67            android:theme="@style/zxing_CaptureTheme"
+67-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:51:13-54
+68            android:windowSoftInputMode="stateAlwaysHidden" />
+68-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/burakdemir/.gradle/caches/transforms-2/files-2.1/226adaac9c16931963c935e5c47df4b5/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:52:13-60
+69    </application>
+70
+71</manifest>
